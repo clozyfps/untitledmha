@@ -194,6 +194,46 @@
         ]
       },
       "path": "~/Keybinds"
+    },
+    {
+      "name": "JoinedWorld",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joined_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/JoinedWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "RandomQuirk",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_quirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/RandomQuirkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
