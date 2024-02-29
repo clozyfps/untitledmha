@@ -8,7 +8,8 @@
       "registry_name": "test",
       "metadata": {
         "dependencies": []
-      }
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -18,7 +19,92 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Armors",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Overlays",
+        "children": []
+      },
+      {
+        "name": "Potions",
+        "children": []
+      },
+      {
+        "name": "Projectiles",
+        "children": []
+      },
+      {
+        "name": "Gamerules",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Tools",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "Functions",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "untitled_mha",
