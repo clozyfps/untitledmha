@@ -108,6 +108,90 @@
         ]
       },
       "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "AbilityFourUse",
+      "type": "keybind",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_four_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityFourUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilitySixUse",
+      "type": "keybind",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_six_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilitySixUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityFiveUse",
+      "type": "keybind",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_five_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityFiveUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityTwoUse",
+      "type": "keybind",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_two_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityTwoUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityThreeUse",
+      "type": "keybind",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_three_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityThreeUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityOneUse",
+      "type": "keybind",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_one_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityOneUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [
@@ -212,21 +296,85 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "Quirks",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "key.categories.umha": "Untitled MHA"
+    }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
+        "name": "Gamerules",
+        "children": []
+      },
+      {
         "name": "Procedures",
         "children": []
       },
       {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": []
+      },
+      {
         "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Overlays",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Projectiles",
+        "children": []
+      },
+      {
+        "name": "Tools",
+        "children": []
+      },
+      {
+        "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Functions",
         "children": []
       },
       {
@@ -238,56 +386,17 @@
         "children": []
       },
       {
-        "name": "Keybinds",
-        "children": []
-      },
-      {
-        "name": "GUI",
-        "children": []
-      },
-      {
-        "name": "Overlays",
-        "children": []
-      },
-      {
         "name": "Potions",
         "children": []
       },
       {
-        "name": "Projectiles",
-        "children": []
-      },
-      {
-        "name": "Gamerules",
-        "children": []
-      },
-      {
-        "name": "Advancements",
-        "children": []
-      },
-      {
-        "name": "Tools",
-        "children": []
-      },
-      {
-        "name": "Recipes",
-        "children": []
-      },
-      {
-        "name": "Tags",
-        "children": []
-      },
-      {
-        "name": "Dimensions",
-        "children": []
-      },
-      {
-        "name": "Biomes",
-        "children": []
-      },
-      {
-        "name": "Blocks",
-        "children": []
+        "name": "Keybinds",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Commands",
@@ -297,18 +406,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Creative Tabs",
-        "children": []
-      },
-      {
-        "name": "Functions",
-        "children": []
-      },
-      {
-        "name": "Particles",
-        "children": []
       }
     ]
   },
