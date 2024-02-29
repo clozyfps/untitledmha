@@ -192,6 +192,46 @@
         ]
       },
       "path": "~/Keybinds"
+    },
+    {
+      "name": "RandomQuirk",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_quirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/RandomQuirkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "JoinedWorld",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joined_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/JoinedWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -307,7 +347,13 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "key.categories.umha": "Untitled MHA"
+      "key.categories.umha": "Untitled MHA",
+      "key.untitled_mha.ability_two_use": "Ability Two",
+      "key.untitled_mha.ability_three_use": "Ability Three",
+      "key.untitled_mha.ability_four_use": "Ability Four",
+      "key.untitled_mha.ability_one_use": "Ability One",
+      "key.untitled_mha.ability_five_use": "Ability Five",
+      "key.untitled_mha.ability_six_use": "Ability Six"
     }
   },
   "foldersRoot": {

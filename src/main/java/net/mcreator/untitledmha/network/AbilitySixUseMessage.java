@@ -1,11 +1,19 @@
 
 package net.mcreator.untitledmha.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.network.FriendlyByteBuf;
+
 import net.mcreator.untitledmha.UntitledMhaMod;
+
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbilitySixUseMessage {
-
 	int type, pressedms;
 
 	public AbilitySixUseMessage(int type, int pressedms) {
@@ -34,5 +42,4 @@ public class AbilitySixUseMessage {
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		UntitledMhaMod.addNetworkMessage(AbilitySixUseMessage.class, AbilitySixUseMessage::buffer, AbilitySixUseMessage::new, AbilitySixUseMessage::handler);
 	}
-
 }
