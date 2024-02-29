@@ -1,8 +1,12 @@
 {
+  "death.attack.high_speed": "%1$s was hit with high speeds",
   "key.categories.umha": "Untitled MHA",
   "key.untitled_mha.ability_two_use": "Ability Two",
   "key.untitled_mha.ability_three_use": "Ability Three",
+  "effect.untitled_mha.fa_jin_active": "Fa Jin Active",
   "key.untitled_mha.ability_four_use": "Ability Four",
+  "death.attack.high_speed.item": "%1$s was killed by %2$s using %3$s",
+  "death.attack.high_speed.player": "%1$s died whilst trying to escape %2$s\u0027s high speeds",
   "key.untitled_mha.ability_one_use": "Ability One",
   "key.untitled_mha.ability_five_use": "Ability Five",
   "key.untitled_mha.ability_six_use": "Ability Six"

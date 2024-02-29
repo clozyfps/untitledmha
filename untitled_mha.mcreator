@@ -15,6 +15,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -220,6 +236,144 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "FaJinActivate",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_activate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinActivateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Moves/FaJin"
+    },
+    {
+      "name": "FaJinMoves",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_moves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinMovesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Moves/UseMoves"
+    },
+    {
+      "name": "HighSpeed",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_speed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/untitled_mha/damage_type/high_speed.json"
+        ]
+      },
+      "path": "~/DamageSources"
+    },
+    {
+      "name": "FaJinActiveOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_active_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinActiveOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Moves/FaJin"
+    },
+    {
+      "name": "FaJinActive",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/potion/FaJinActiveMobEffect.java"
+        ]
+      },
+      "path": "~/Moves/FaJin"
+    },
+    {
+      "name": "FaJinUse",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Moves/FaJin"
     }
   ],
   "variable_elements": [
@@ -330,15 +484,43 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "Stamina",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "50.0"
+    },
+    {
+      "name": "FaJinLevel",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "StaminaMax",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "50.0"
+    },
+    {
+      "name": "QuirkMastery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "death.attack.high_speed": "%1$s was hit with high speeds",
       "key.categories.umha": "Untitled MHA",
       "key.untitled_mha.ability_two_use": "Ability Two",
       "key.untitled_mha.ability_three_use": "Ability Three",
+      "effect.untitled_mha.fa_jin_active": "Fa Jin Active",
       "key.untitled_mha.ability_four_use": "Ability Four",
+      "death.attack.high_speed.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.high_speed.player": "%1$s died whilst trying to escape %2$s\u0027s high speeds",
       "key.untitled_mha.ability_one_use": "Ability One",
       "key.untitled_mha.ability_five_use": "Ability Five",
       "key.untitled_mha.ability_six_use": "Ability Six"
@@ -440,6 +622,23 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Moves",
+        "children": [
+          {
+            "name": "UseMoves",
+            "children": []
+          },
+          {
+            "name": "FaJin",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "DamageSources",
+        "children": []
       }
     ]
   },
