@@ -28,5 +28,6 @@ public class PlayerTickProcedure {
 			return;
 		PowerUpProcedure.execute(entity);
 		FaJinActivateProcedure.execute(world, x, y, z, entity);
+		FaJinMovesProcedure.execute(entity);
 	}
 }

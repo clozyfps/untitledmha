@@ -1,8 +1,8 @@
 package net.mcreator.untitledmha.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.untitledmha.network.UntitledMhaModVariables;
 
 public class DisplayAbilityOneProcedure {
 	public static String execute(Entity entity) {

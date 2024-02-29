@@ -1,0 +1,42 @@
+{
+  "ofacharge": {
+    "sounds": [
+      {
+        "name": "untitled_mha:chargeofs",
+        "stream": false
+      }
+    ]
+  },
+  "slashattack": {
+    "sounds": [
+      {
+        "name": "untitled_mha:audio_-_attack_sfx_-_creator_store",
+        "stream": false
+      }
+    ]
+  },
+  "criticalpunch": {
+    "sounds": [
+      {
+        "name": "untitled_mha:audio_-_hit_punch_s_-_creator_store",
+        "stream": false
+      }
+    ]
+  },
+  "bladeslice": {
+    "sounds": [
+      {
+        "name": "untitled_mha:audio_-_tf2_blade_slice_-_creator_marketplace",
+        "stream": false
+      }
+    ]
+  },
+  "heian": {
+    "sounds": [
+      {
+        "name": "untitled_mha:audio_-_sfx_health_-_creator_store",
+        "stream": false
+      }
+    ]
+  }
+}

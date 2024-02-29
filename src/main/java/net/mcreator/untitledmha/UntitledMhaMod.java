@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.untitledmha.init.UntitledMhaModSounds;
 import net.mcreator.untitledmha.init.UntitledMhaModMobEffects;
 
 import java.util.function.Supplier;
@@ -48,6 +49,7 @@ public class UntitledMhaMod {
 	public UntitledMhaMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		UntitledMhaModSounds.REGISTRY.register(bus);
 
 		UntitledMhaModMobEffects.REGISTRY.register(bus);
 
