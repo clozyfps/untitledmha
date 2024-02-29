@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.untitledmha.init.UntitledMhaModSounds;
 import net.mcreator.untitledmha.init.UntitledMhaModMobEffects;
+import net.mcreator.untitledmha.init.UntitledMhaModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -50,6 +51,8 @@ public class UntitledMhaMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		UntitledMhaModSounds.REGISTRY.register(bus);
+
+		UntitledMhaModItems.REGISTRY.register(bus);
 
 		UntitledMhaModMobEffects.REGISTRY.register(bus);
 

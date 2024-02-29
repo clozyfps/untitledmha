@@ -13,6 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.untitledmha.procedures.DisplayStaminaProcedure;
 import net.mcreator.untitledmha.procedures.DisplayAbilityTwoProcedure;
 import net.mcreator.untitledmha.procedures.DisplayAbilityThreeProcedure;
 import net.mcreator.untitledmha.procedures.DisplayAbilitySixProcedure;
@@ -55,7 +56,10 @@ public class PlaceholderOverlayOverlay {
 					DisplayAbilityFiveProcedure.execute(entity), 6, h / 2 + 32, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					DisplayAbilitySixProcedure.execute(entity), w / 2 + -207, h / 2 + 59, -1, false);
+					DisplayAbilitySixProcedure.execute(entity), 6, h - 61, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					DisplayStaminaProcedure.execute(entity), 6, h - 34, -1, false);
 		}
 	}
 }

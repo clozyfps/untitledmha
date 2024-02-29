@@ -45,7 +45,7 @@ public class FaJinActiveOnEffectActiveTickProcedure {
 										+ (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).QuirkMastery / 10));
 					}
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 1, 0.1, 2, 0.1, 0);
+						_level.sendParticles(ParticleTypes.EXPLOSION, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 1, 0.1, 2, 0.1, 0);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.POOF, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 3, 0.1, 2, 0.1, 0.4);
 					if (world instanceof Level _level) {
@@ -91,7 +91,7 @@ public class FaJinActiveOnEffectActiveTickProcedure {
 							if (!((world.getBlockState(BlockPos.containing(x + xi, y + i, z + zi))).getBlock() == Blocks.AIR)) {
 								world.destroyBlock(BlockPos.containing(x + xi, y + i, z + zi), false);
 								if (world instanceof ServerLevel _level)
-									_level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, x + xi, y + i, z + zi, 1, 0.1, 2, 0.1, 0);
+									_level.sendParticles(ParticleTypes.EXPLOSION, x + xi, y + i, z + zi, (int) 0.5, 0.1, 2, 0.1, 0);
 								if (world instanceof ServerLevel _level)
 									_level.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, x + xi, y + i, z + zi, 1, 0.1, 2, 0.1, 0);
 								if (world instanceof Level _level) {
@@ -106,6 +106,15 @@ public class FaJinActiveOnEffectActiveTickProcedure {
 					}
 				}
 			}
+		}
+		if (!((entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).Quirks).contains("One For All")) {
+			entity.setDeltaMovement(new Vec3(((1 + (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel / 10) * entity.getLookAngle().x),
+					((1 + (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel / 10) * entity.getLookAngle().y),
+					((1 + (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel / 10) * entity.getLookAngle().z)));
+		} else if (((entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).Quirks).contains("One For All")) {
+			entity.setDeltaMovement(new Vec3(((1 + (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel / 5) * entity.getLookAngle().x),
+					((1 + (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel / 5) * entity.getLookAngle().y),
+					((1 + (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel / 5) * entity.getLookAngle().z)));
 		}
 	}
 }

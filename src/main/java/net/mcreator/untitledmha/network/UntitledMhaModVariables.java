@@ -86,6 +86,8 @@ public class UntitledMhaModVariables {
 			clone.StaminaMax = original.StaminaMax;
 			clone.QuirkMastery = original.QuirkMastery;
 			clone.Stamina = original.Stamina;
+			clone.QuirkSubMastery = original.QuirkSubMastery;
+			clone.QuirkMasteryCap = original.QuirkMasteryCap;
 			if (!event.isWasDeath()) {
 				clone.Moveset = original.Moveset;
 				clone.FaJinLevel = original.FaJinLevel;
@@ -146,6 +148,8 @@ public class UntitledMhaModVariables {
 		public double QuirkMastery = 0;
 		public double FaJinLevel = 0;
 		public double Stamina = 50.0;
+		public double QuirkSubMastery = 0;
+		public double QuirkMasteryCap = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -176,6 +180,8 @@ public class UntitledMhaModVariables {
 			nbt.putDouble("QuirkMastery", QuirkMastery);
 			nbt.putDouble("FaJinLevel", FaJinLevel);
 			nbt.putDouble("Stamina", Stamina);
+			nbt.putDouble("QuirkSubMastery", QuirkSubMastery);
+			nbt.putDouble("QuirkMasteryCap", QuirkMasteryCap);
 			return nbt;
 		}
 
@@ -203,6 +209,8 @@ public class UntitledMhaModVariables {
 			QuirkMastery = nbt.getDouble("QuirkMastery");
 			FaJinLevel = nbt.getDouble("FaJinLevel");
 			Stamina = nbt.getDouble("Stamina");
+			QuirkSubMastery = nbt.getDouble("QuirkSubMastery");
+			QuirkMasteryCap = nbt.getDouble("QuirkMasteryCap");
 		}
 	}
 
@@ -249,6 +257,8 @@ public class UntitledMhaModVariables {
 					variables.QuirkMastery = message.data.QuirkMastery;
 					variables.FaJinLevel = message.data.FaJinLevel;
 					variables.Stamina = message.data.Stamina;
+					variables.QuirkSubMastery = message.data.QuirkSubMastery;
+					variables.QuirkMasteryCap = message.data.QuirkMasteryCap;
 				}
 			});
 			context.setPacketHandled(true);

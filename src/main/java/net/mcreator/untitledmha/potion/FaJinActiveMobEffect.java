@@ -3,6 +3,7 @@ package net.mcreator.untitledmha.potion;
 
 import net.minecraftforge.client.extensions.common.IClientMobEffectExtensions;
 
+import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -11,6 +12,7 @@ import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.untitledmha.procedures.FaJinActiveOnEffectActiveTickProcedure;
+import net.mcreator.untitledmha.procedures.FaJinActiveEffectExpiresProcedure;
 
 public class FaJinActiveMobEffect extends MobEffect {
 	public FaJinActiveMobEffect() {
@@ -25,6 +27,12 @@ public class FaJinActiveMobEffect extends MobEffect {
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		FaJinActiveOnEffectActiveTickProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+	}
+
+	@Override
+	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+		super.removeAttributeModifiers(entity, attributeMap, amplifier);
+		FaJinActiveEffectExpiresProcedure.execute(entity);
 	}
 
 	@Override

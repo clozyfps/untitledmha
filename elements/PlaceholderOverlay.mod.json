@@ -101,9 +101,26 @@
             "value": -1,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_LEFT",
           "x": 6,
           "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_stamina",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayStamina"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 206
         }
       }
     ],

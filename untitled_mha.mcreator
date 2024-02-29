@@ -667,6 +667,337 @@
         ]
       },
       "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "SetSlot1",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SetSlot1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SetSlot2",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SetSlot2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SetSlot3",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SetSlot3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SetSlot4",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SetSlot4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SetSlot5",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SetSlot5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "SetSlot6",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SetSlot6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "FaJinSet",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "StaminaRegain",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_regain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/StaminaRegainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MasterySet",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mastery_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/MasterySetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "DisplayStamina",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_stamina",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayStaminaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "DebugItemRightclicked",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DebugItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DebugItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/item/DebugItemItem.java",
+          "src/main/resources/assets/untitled_mha/models/item/debug_item.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FaJinActiveEffectExpires",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_active_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinActiveEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Moves/FaJin"
+    },
+    {
+      "name": "FaJinBlocks",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fa_jin_blocks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/FaJinBlocksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Moves/FaJin"
+    },
+    {
+      "name": "StaminaSet",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stamina_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/StaminaSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "CooldownTimer",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooldown_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/CooldownTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -801,6 +1132,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "50.0"
+    },
+    {
+      "name": "QuirkSubMastery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "QuirkMasteryCap",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -847,21 +1190,15 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.slashattack": "",
-      "death.attack.high_speed": "%1$s was hit with high speeds",
-      "key.untitled_mha.switch_moveset": "Switch Moveset",
       "subtitles.bladeslice": "",
       "death.attack.high_speed.player": "%1$s died whilst trying to escape %2$s\u0027s high speeds",
       "subtitles.criticalpunch": "",
-      "key.untitled_mha.ability_six_use": "Ability Six",
       "key.untitled_mha.ability_two_use": "Ability Two",
-      "key.categories.umha": "Untitled MHA",
       "key.untitled_mha.ability_three_use": "Ability Three",
       "effect.untitled_mha.fa_jin_active": "Fa Jin Active",
       "subtitles.heian": "",
-      "key.untitled_mha.ability_four_use": "Ability Four",
-      "gui.untitled_mha.placeholder_overlay.label_a5": "A5",
       "death.attack.high_speed.item": "%1$s was killed by %2$s using %3$s",
+      "gui.untitled_mha.placeholder_overlay.label_a5": "A5",
       "key.untitled_mha.ability_one_use": "Ability One",
       "gui.untitled_mha.placeholder_overlay.label_a6": "A6",
       "gui.untitled_mha.placeholder_overlay.label_a3": "A3",
@@ -869,7 +1206,14 @@
       "key.untitled_mha.ability_five_use": "Ability Five",
       "gui.untitled_mha.placeholder_overlay.label_a1": "A1",
       "gui.untitled_mha.placeholder_overlay.label_a2": "A2",
-      "subtitles.ofacharge": ""
+      "subtitles.ofacharge": "",
+      "subtitles.slashattack": "",
+      "death.attack.high_speed": "%1$s was hit with high speeds",
+      "item.untitled_mha.debug_item": "Debug Item",
+      "key.untitled_mha.switch_moveset": "Switch Moveset",
+      "key.untitled_mha.ability_six_use": "Ability Six",
+      "key.categories.umha": "Untitled MHA",
+      "key.untitled_mha.ability_four_use": "Ability Four"
     }
   },
   "foldersRoot": {

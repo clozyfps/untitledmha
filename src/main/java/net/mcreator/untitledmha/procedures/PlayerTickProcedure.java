@@ -29,5 +29,7 @@ public class PlayerTickProcedure {
 		PowerUpProcedure.execute(entity);
 		FaJinActivateProcedure.execute(world, x, y, z, entity);
 		FaJinMovesProcedure.execute(entity);
+		StaminaRegainProcedure.execute(entity);
+		CooldownTimerProcedure.execute(entity);
 	}
 }
