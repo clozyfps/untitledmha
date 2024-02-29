@@ -3,10 +3,26 @@
     {
       "name": "Test",
       "type": "procedure",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test",
       "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/PlayerTickProcedure.java"
+        ],
         "dependencies": []
       },
       "path": "~/Procedures"
