@@ -2,8 +2,8 @@
   "_fv": 57,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "B",
-    "keyBindingName": "Ability Five",
+    "triggerKey": "R",
+    "keyBindingName": "Switch Moveset",
     "keyBindingCategoryKey": "umha"
   }
 }

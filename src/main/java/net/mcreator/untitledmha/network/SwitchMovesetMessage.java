@@ -13,25 +13,25 @@ import net.mcreator.untitledmha.UntitledMhaMod;
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class AbilityFourUseMessage {
+public class SwitchMovesetMessage {
 	int type, pressedms;
 
-	public AbilityFourUseMessage(int type, int pressedms) {
+	public SwitchMovesetMessage(int type, int pressedms) {
 		this.type = type;
 		this.pressedms = pressedms;
 	}
 
-	public AbilityFourUseMessage(FriendlyByteBuf buffer) {
+	public SwitchMovesetMessage(FriendlyByteBuf buffer) {
 		this.type = buffer.readInt();
 		this.pressedms = buffer.readInt();
 	}
 
-	public static void buffer(AbilityFourUseMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(SwitchMovesetMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.type);
 		buffer.writeInt(message.pressedms);
 	}
 
-	public static void handler(AbilityFourUseMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(SwitchMovesetMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 		});
@@ -40,6 +40,6 @@ public class AbilityFourUseMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		UntitledMhaMod.addNetworkMessage(AbilityFourUseMessage.class, AbilityFourUseMessage::buffer, AbilityFourUseMessage::new, AbilityFourUseMessage::handler);
+		UntitledMhaMod.addNetworkMessage(SwitchMovesetMessage.class, SwitchMovesetMessage::buffer, SwitchMovesetMessage::new, SwitchMovesetMessage::handler);
 	}
 }

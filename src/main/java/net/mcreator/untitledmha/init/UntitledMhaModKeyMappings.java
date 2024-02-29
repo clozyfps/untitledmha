@@ -17,12 +17,13 @@ import net.minecraft.client.KeyMapping;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class UntitledMhaModKeyMappings {
-	public static final KeyMapping ABILITY_TWO_USE = new KeyMapping("key.untitled_mha.ability_two_use", GLFW.GLFW_KEY_Z, "key.categories.umha");
+	public static final KeyMapping ABILITY_TWO_USE = new KeyMapping("key.untitled_mha.ability_two_use", GLFW.GLFW_KEY_X, "key.categories.umha");
 	public static final KeyMapping ABILITY_ONE_USE = new KeyMapping("key.untitled_mha.ability_one_use", GLFW.GLFW_KEY_Z, "key.categories.umha");
-	public static final KeyMapping ABILITY_THREE_USE = new KeyMapping("key.untitled_mha.ability_three_use", GLFW.GLFW_KEY_Z, "key.categories.umha");
-	public static final KeyMapping ABILITY_FOUR_USE = new KeyMapping("key.untitled_mha.ability_four_use", GLFW.GLFW_KEY_Z, "key.categories.umha");
-	public static final KeyMapping ABILITY_FIVE_USE = new KeyMapping("key.untitled_mha.ability_five_use", GLFW.GLFW_KEY_Z, "key.categories.umha");
-	public static final KeyMapping ABILITY_SIX_USE = new KeyMapping("key.untitled_mha.ability_six_use", GLFW.GLFW_KEY_Z, "key.categories.umha");
+	public static final KeyMapping ABILITY_THREE_USE = new KeyMapping("key.untitled_mha.ability_three_use", GLFW.GLFW_KEY_C, "key.categories.umha");
+	public static final KeyMapping ABILITY_FOUR_USE = new KeyMapping("key.untitled_mha.ability_four_use", GLFW.GLFW_KEY_V, "key.categories.umha");
+	public static final KeyMapping ABILITY_FIVE_USE = new KeyMapping("key.untitled_mha.ability_five_use", GLFW.GLFW_KEY_B, "key.categories.umha");
+	public static final KeyMapping ABILITY_SIX_USE = new KeyMapping("key.untitled_mha.ability_six_use", GLFW.GLFW_KEY_N, "key.categories.umha");
+	public static final KeyMapping SWITCH_MOVESET = new KeyMapping("key.untitled_mha.switch_moveset", GLFW.GLFW_KEY_R, "key.categories.umha");
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -32,6 +33,7 @@ public class UntitledMhaModKeyMappings {
 		event.register(ABILITY_FOUR_USE);
 		event.register(ABILITY_FIVE_USE);
 		event.register(ABILITY_SIX_USE);
+		event.register(SWITCH_MOVESET);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})

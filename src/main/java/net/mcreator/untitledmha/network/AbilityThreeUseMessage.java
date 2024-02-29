@@ -1,11 +1,19 @@
 
 package net.mcreator.untitledmha.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.network.FriendlyByteBuf;
+
 import net.mcreator.untitledmha.UntitledMhaMod;
+
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbilityThreeUseMessage {
-
 	int type, pressedms;
 
 	public AbilityThreeUseMessage(int type, int pressedms) {
@@ -34,5 +42,4 @@ public class AbilityThreeUseMessage {
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		UntitledMhaMod.addNetworkMessage(AbilityThreeUseMessage.class, AbilityThreeUseMessage::buffer, AbilityThreeUseMessage::new, AbilityThreeUseMessage::handler);
 	}
-
 }

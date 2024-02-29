@@ -180,6 +180,20 @@
         ]
       },
       "path": "~/Keybinds"
+    },
+    {
+      "name": "SwitchMoveset",
+      "type": "keybind",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_moveset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/SwitchMovesetMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [
@@ -295,7 +309,14 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "key.categories.umha": "Untitled MHA"
+      "key.categories.umha": "Untitled MHA",
+      "key.untitled_mha.ability_two_use": "Ability Two",
+      "key.untitled_mha.switch_moveset": "Switch Moveset",
+      "key.untitled_mha.ability_three_use": "Ability Three",
+      "key.untitled_mha.ability_four_use": "Ability Four",
+      "key.untitled_mha.ability_one_use": "Ability One",
+      "key.untitled_mha.ability_five_use": "Ability Five",
+      "key.untitled_mha.ability_six_use": "Ability Six"
     }
   },
   "foldersRoot": {
