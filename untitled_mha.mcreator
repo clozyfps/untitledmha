@@ -185,7 +185,7 @@
       "name": "SwitchMoveset",
       "type": "keybind",
       "sortid": 11,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "switch_moveset",
       "metadata": {
@@ -199,7 +199,7 @@
       "name": "JoinedWorld",
       "type": "procedure",
       "sortid": 12,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "joined_world",
       "metadata": {
@@ -219,7 +219,7 @@
       "name": "RandomQuirk",
       "type": "procedure",
       "sortid": 11,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "random_quirk",
       "metadata": {
