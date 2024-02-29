@@ -103,6 +103,78 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "AbilityOne",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityTwo",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityThree",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityFour",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityFive",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilitySix",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilitySeven",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityEight",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityNine",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityTen",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityEleven",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "AbilityTwelve",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],

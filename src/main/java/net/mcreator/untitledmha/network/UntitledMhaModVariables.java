@@ -69,6 +69,18 @@ public class UntitledMhaModVariables {
 			clone.Exp = original.Exp;
 			clone.MaxExp = original.MaxExp;
 			clone.Power = original.Power;
+			clone.AbilityOne = original.AbilityOne;
+			clone.AbilityTwo = original.AbilityTwo;
+			clone.AbilityThree = original.AbilityThree;
+			clone.AbilityFour = original.AbilityFour;
+			clone.AbilityFive = original.AbilityFive;
+			clone.AbilitySix = original.AbilitySix;
+			clone.AbilitySeven = original.AbilitySeven;
+			clone.AbilityEight = original.AbilityEight;
+			clone.AbilityNine = original.AbilityNine;
+			clone.AbilityTen = original.AbilityTen;
+			clone.AbilityEleven = original.AbilityEleven;
+			clone.AbilityTwelve = original.AbilityTwelve;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -108,6 +120,18 @@ public class UntitledMhaModVariables {
 		public double Exp = 0;
 		public double MaxExp = 0;
 		public double Power = 0;
+		public String AbilityOne = "\"\"";
+		public String AbilityTwo = "\"\"";
+		public String AbilityThree = "\"\"";
+		public String AbilityFour = "\"\"";
+		public String AbilityFive = "\"\"";
+		public String AbilitySix = "\"\"";
+		public String AbilitySeven = "\"\"";
+		public String AbilityEight = "\"\"";
+		public String AbilityNine = "\"\"";
+		public String AbilityTen = "\"\"";
+		public String AbilityEleven = "\"\"";
+		public String AbilityTwelve = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -119,6 +143,18 @@ public class UntitledMhaModVariables {
 			nbt.putDouble("Exp", Exp);
 			nbt.putDouble("MaxExp", MaxExp);
 			nbt.putDouble("Power", Power);
+			nbt.putString("AbilityOne", AbilityOne);
+			nbt.putString("AbilityTwo", AbilityTwo);
+			nbt.putString("AbilityThree", AbilityThree);
+			nbt.putString("AbilityFour", AbilityFour);
+			nbt.putString("AbilityFive", AbilityFive);
+			nbt.putString("AbilitySix", AbilitySix);
+			nbt.putString("AbilitySeven", AbilitySeven);
+			nbt.putString("AbilityEight", AbilityEight);
+			nbt.putString("AbilityNine", AbilityNine);
+			nbt.putString("AbilityTen", AbilityTen);
+			nbt.putString("AbilityEleven", AbilityEleven);
+			nbt.putString("AbilityTwelve", AbilityTwelve);
 			return nbt;
 		}
 
@@ -127,6 +163,18 @@ public class UntitledMhaModVariables {
 			Exp = nbt.getDouble("Exp");
 			MaxExp = nbt.getDouble("MaxExp");
 			Power = nbt.getDouble("Power");
+			AbilityOne = nbt.getString("AbilityOne");
+			AbilityTwo = nbt.getString("AbilityTwo");
+			AbilityThree = nbt.getString("AbilityThree");
+			AbilityFour = nbt.getString("AbilityFour");
+			AbilityFive = nbt.getString("AbilityFive");
+			AbilitySix = nbt.getString("AbilitySix");
+			AbilitySeven = nbt.getString("AbilitySeven");
+			AbilityEight = nbt.getString("AbilityEight");
+			AbilityNine = nbt.getString("AbilityNine");
+			AbilityTen = nbt.getString("AbilityTen");
+			AbilityEleven = nbt.getString("AbilityEleven");
+			AbilityTwelve = nbt.getString("AbilityTwelve");
 		}
 	}
 
@@ -154,6 +202,18 @@ public class UntitledMhaModVariables {
 					variables.Exp = message.data.Exp;
 					variables.MaxExp = message.data.MaxExp;
 					variables.Power = message.data.Power;
+					variables.AbilityOne = message.data.AbilityOne;
+					variables.AbilityTwo = message.data.AbilityTwo;
+					variables.AbilityThree = message.data.AbilityThree;
+					variables.AbilityFour = message.data.AbilityFour;
+					variables.AbilityFive = message.data.AbilityFive;
+					variables.AbilitySix = message.data.AbilitySix;
+					variables.AbilitySeven = message.data.AbilitySeven;
+					variables.AbilityEight = message.data.AbilityEight;
+					variables.AbilityNine = message.data.AbilityNine;
+					variables.AbilityTen = message.data.AbilityTen;
+					variables.AbilityEleven = message.data.AbilityEleven;
+					variables.AbilityTwelve = message.data.AbilityTwelve;
 				}
 			});
 			context.setPacketHandled(true);
