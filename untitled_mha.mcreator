@@ -83,6 +83,30 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "ExpGain",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_gain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/ExpGainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
