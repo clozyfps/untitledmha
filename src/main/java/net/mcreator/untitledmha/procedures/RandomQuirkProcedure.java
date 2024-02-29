@@ -1,8 +1,10 @@
 package net.mcreator.untitledmha.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 
-import javax.annotation.Nullable;
+import net.mcreator.untitledmha.network.UntitledMhaModVariables;
 
 public class RandomQuirkProcedure {
 	public static void execute(Entity entity) {

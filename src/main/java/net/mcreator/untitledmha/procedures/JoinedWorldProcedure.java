@@ -1,6 +1,13 @@
 package net.mcreator.untitledmha.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.TickEvent;
+
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.untitledmha.network.UntitledMhaModVariables;
 
 import javax.annotation.Nullable;
 
@@ -28,6 +35,7 @@ public class JoinedWorldProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			RandomQuirkProcedure.execute(entity);
 		}
 	}
 }

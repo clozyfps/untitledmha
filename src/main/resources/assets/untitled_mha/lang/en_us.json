@@ -1,10 +1,16 @@
 {
-  "key.categories.umha": "Untitled MHA",
-  "key.untitled_mha.ability_two_use": "Ability Two",
   "key.untitled_mha.switch_moveset": "Switch Moveset",
+  "key.untitled_mha.ability_six_use": "Ability Six",
+  "key.untitled_mha.ability_two_use": "Ability Two",
+  "key.categories.umha": "Untitled MHA",
   "key.untitled_mha.ability_three_use": "Ability Three",
   "key.untitled_mha.ability_four_use": "Ability Four",
+  "gui.untitled_mha.placeholder_overlay.label_a5": "A5",
   "key.untitled_mha.ability_one_use": "Ability One",
+  "gui.untitled_mha.placeholder_overlay.label_a6": "A6",
+  "gui.untitled_mha.placeholder_overlay.label_a3": "A3",
+  "gui.untitled_mha.placeholder_overlay.label_a4": "A4",
   "key.untitled_mha.ability_five_use": "Ability Five",
-  "key.untitled_mha.ability_six_use": "Ability Six"
+  "gui.untitled_mha.placeholder_overlay.label_a1": "A1",
+  "gui.untitled_mha.placeholder_overlay.label_a2": "A2"
 }

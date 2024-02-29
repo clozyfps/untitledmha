@@ -185,7 +185,7 @@
       "name": "SwitchMoveset",
       "type": "keybind",
       "sortid": 11,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "switch_moveset",
       "metadata": {
@@ -199,7 +199,7 @@
       "name": "JoinedWorld",
       "type": "procedure",
       "sortid": 12,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "joined_world",
       "metadata": {
@@ -219,7 +219,7 @@
       "name": "RandomQuirk",
       "type": "procedure",
       "sortid": 11,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "random_quirk",
       "metadata": {
@@ -234,6 +234,285 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "AbilityOnePressed",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_one_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/AbilityOnePressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "AbilityTwoPressed",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_two_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/AbilityTwoPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "AbilityThreePressed",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_three_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/AbilityThreePressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "AbilityFourPressed",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_four_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/AbilityFourPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "AbilityFivePressed",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_five_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/AbilityFivePressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "AbilitySixPressed",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_six_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/AbilitySixPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "SwitchMovesetPressed",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_moveset_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/SwitchMovesetPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "PlaceholderOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "placeholder_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/client/screens/PlaceholderOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "DisplayAbilityOne",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_ability_one",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayAbilityOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "DisplayAbilityTwo",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_ability_two",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayAbilityTwoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "DisplayAbilityThree",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_ability_three",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayAbilityThreeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "DisplayAbilityFour",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_ability_four",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayAbilityFourProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "DisplayAbilityFive",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_ability_five",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayAbilityFiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
+    },
+    {
+      "name": "DisplayAbilitySix",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_ability_six",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/DisplayAbilitySixProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Procedures"
     }
   ],
   "variable_elements": [
@@ -349,14 +628,20 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "key.categories.umha": "Untitled MHA",
-      "key.untitled_mha.ability_two_use": "Ability Two",
       "key.untitled_mha.switch_moveset": "Switch Moveset",
+      "key.untitled_mha.ability_six_use": "Ability Six",
+      "key.untitled_mha.ability_two_use": "Ability Two",
+      "key.categories.umha": "Untitled MHA",
       "key.untitled_mha.ability_three_use": "Ability Three",
       "key.untitled_mha.ability_four_use": "Ability Four",
+      "gui.untitled_mha.placeholder_overlay.label_a5": "A5",
       "key.untitled_mha.ability_one_use": "Ability One",
+      "gui.untitled_mha.placeholder_overlay.label_a6": "A6",
+      "gui.untitled_mha.placeholder_overlay.label_a3": "A3",
+      "gui.untitled_mha.placeholder_overlay.label_a4": "A4",
       "key.untitled_mha.ability_five_use": "Ability Five",
-      "key.untitled_mha.ability_six_use": "Ability Six"
+      "gui.untitled_mha.placeholder_overlay.label_a1": "A1",
+      "gui.untitled_mha.placeholder_overlay.label_a2": "A2"
     }
   },
   "foldersRoot": {
@@ -396,7 +681,12 @@
       },
       {
         "name": "Overlays",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Biomes",

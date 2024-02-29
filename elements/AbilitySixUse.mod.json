@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "N",
     "keyBindingName": "Ability Six",
-    "keyBindingCategoryKey": "umha"
+    "keyBindingCategoryKey": "umha",
+    "onKeyPressed": {
+      "name": "AbilitySixPressed"
+    }
   }
 }
