@@ -2,8 +2,11 @@
   "_fv": 57,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "Z",
+    "triggerKey": "B",
     "keyBindingName": "Ability Five",
-    "keyBindingCategoryKey": "umha"
+    "keyBindingCategoryKey": "umha",
+    "onKeyPressed": {
+      "name": "AbilityFivePressed"
+    }
   }
 }

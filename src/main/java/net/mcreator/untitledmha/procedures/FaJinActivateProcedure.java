@@ -1,22 +1,8 @@
 package net.mcreator.untitledmha.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
-
-import net.mcreator.untitledmha.network.UntitledMhaModVariables;
+import javax.annotation.Nullable;
 
 public class FaJinActivateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -25,13 +11,6 @@ public class FaJinActivateProcedure {
 		if (entity.isShiftKeyDown()) {
 			if (!entity.getPersistentData().getBoolean("fajinused")) {
 				entity.getPersistentData().putBoolean("fajinused", true);
-				{
-					double _setval = (entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel + 1;
-					entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.FaJinLevel = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"particle minecraft:dust 10.93 0.26 0.5 2 ^0 ^0 ^0 0.2 0.1 0.2 0 15");
@@ -43,10 +22,7 @@ public class FaJinActivateProcedure {
 					}
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(
-							Component.literal(
-									("\u00A7d Fa Jin: " + new java.text.DecimalFormat("#").format((entity.getCapability(UntitledMhaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new UntitledMhaModVariables.PlayerVariables())).FaJinLevel))),
-							true);
+					_player.displayClientMessage(Component.literal(("\u00A7d Fa Jin: " + new java.text.DecimalFormat("#").format())), true);
 			}
 		} else if (!entity.isShiftKeyDown()) {
 			if (entity.getPersistentData().getBoolean("fajinused")) {

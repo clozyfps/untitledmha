@@ -83,9 +83,9 @@ public class UntitledMhaModVariables {
 			clone.AbilityTwelve = original.AbilityTwelve;
 			clone.JoinedWorld = original.JoinedWorld;
 			clone.Quirks = original.Quirks;
-			clone.Stamina = original.Stamina;
 			clone.StaminaMax = original.StaminaMax;
 			clone.QuirkMastery = original.QuirkMastery;
+			clone.Stamina = original.Stamina;
 			if (!event.isWasDeath()) {
 				clone.Moveset = original.Moveset;
 				clone.FaJinLevel = original.FaJinLevel;
@@ -142,10 +142,10 @@ public class UntitledMhaModVariables {
 		public double Moveset = 0;
 		public boolean JoinedWorld = false;
 		public String Quirks = "\"\"";
-		public double Stamina = 50.0;
-		public double FaJinLevel = 0;
 		public double StaminaMax = 50.0;
 		public double QuirkMastery = 0;
+		public double FaJinLevel = 0;
+		public double Stamina = 50.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -172,10 +172,10 @@ public class UntitledMhaModVariables {
 			nbt.putDouble("Moveset", Moveset);
 			nbt.putBoolean("JoinedWorld", JoinedWorld);
 			nbt.putString("Quirks", Quirks);
-			nbt.putDouble("Stamina", Stamina);
-			nbt.putDouble("FaJinLevel", FaJinLevel);
 			nbt.putDouble("StaminaMax", StaminaMax);
 			nbt.putDouble("QuirkMastery", QuirkMastery);
+			nbt.putDouble("FaJinLevel", FaJinLevel);
+			nbt.putDouble("Stamina", Stamina);
 			return nbt;
 		}
 
@@ -199,10 +199,10 @@ public class UntitledMhaModVariables {
 			Moveset = nbt.getDouble("Moveset");
 			JoinedWorld = nbt.getBoolean("JoinedWorld");
 			Quirks = nbt.getString("Quirks");
-			Stamina = nbt.getDouble("Stamina");
-			FaJinLevel = nbt.getDouble("FaJinLevel");
 			StaminaMax = nbt.getDouble("StaminaMax");
 			QuirkMastery = nbt.getDouble("QuirkMastery");
+			FaJinLevel = nbt.getDouble("FaJinLevel");
+			Stamina = nbt.getDouble("Stamina");
 		}
 	}
 
@@ -245,10 +245,10 @@ public class UntitledMhaModVariables {
 					variables.Moveset = message.data.Moveset;
 					variables.JoinedWorld = message.data.JoinedWorld;
 					variables.Quirks = message.data.Quirks;
-					variables.Stamina = message.data.Stamina;
-					variables.FaJinLevel = message.data.FaJinLevel;
 					variables.StaminaMax = message.data.StaminaMax;
 					variables.QuirkMastery = message.data.QuirkMastery;
+					variables.FaJinLevel = message.data.FaJinLevel;
+					variables.Stamina = message.data.Stamina;
 				}
 			});
 			context.setPacketHandled(true);
