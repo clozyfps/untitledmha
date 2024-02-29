@@ -81,6 +81,7 @@ public class UntitledMhaModVariables {
 			clone.AbilityTen = original.AbilityTen;
 			clone.AbilityEleven = original.AbilityEleven;
 			clone.AbilityTwelve = original.AbilityTwelve;
+			clone.JoinedWorld = original.JoinedWorld;
 			if (!event.isWasDeath()) {
 				clone.Moveset = original.Moveset;
 			}
@@ -134,6 +135,7 @@ public class UntitledMhaModVariables {
 		public String AbilityEleven = "\"\"";
 		public String AbilityTwelve = "\"\"";
 		public double Moveset = 0;
+		public boolean JoinedWorld = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -158,6 +160,7 @@ public class UntitledMhaModVariables {
 			nbt.putString("AbilityEleven", AbilityEleven);
 			nbt.putString("AbilityTwelve", AbilityTwelve);
 			nbt.putDouble("Moveset", Moveset);
+			nbt.putBoolean("JoinedWorld", JoinedWorld);
 			return nbt;
 		}
 
@@ -179,6 +182,7 @@ public class UntitledMhaModVariables {
 			AbilityEleven = nbt.getString("AbilityEleven");
 			AbilityTwelve = nbt.getString("AbilityTwelve");
 			Moveset = nbt.getDouble("Moveset");
+			JoinedWorld = nbt.getBoolean("JoinedWorld");
 		}
 	}
 
@@ -219,6 +223,7 @@ public class UntitledMhaModVariables {
 					variables.AbilityEleven = message.data.AbilityEleven;
 					variables.AbilityTwelve = message.data.AbilityTwelve;
 					variables.Moveset = message.data.Moveset;
+					variables.JoinedWorld = message.data.JoinedWorld;
 				}
 			});
 			context.setPacketHandled(true);

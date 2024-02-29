@@ -75,6 +75,39 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "MhaSet",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mha_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/command/MhaSetCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "LevelSet",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/procedures/LevelSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
     }
   ],
   "variable_elements": [
@@ -173,6 +206,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "JoinedWorld",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -252,7 +291,12 @@
       },
       {
         "name": "Commands",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Creative Tabs",
