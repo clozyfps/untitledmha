@@ -75,6 +75,90 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "AbilityOneUse",
+      "type": "keybind",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_one_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityOneUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityTwoUse",
+      "type": "keybind",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_two_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityTwoUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityThreeUse",
+      "type": "keybind",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_three_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityThreeUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityFourUse",
+      "type": "keybind",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_four_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityFourUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityFiveUse",
+      "type": "keybind",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_five_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilityFiveUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilitySixUse",
+      "type": "keybind",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_six_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/untitledmha/network/AbilitySixUseMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [
@@ -177,7 +261,15 @@
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "key.untitled_mha.ability_two_use": "Ability Two",
+      "key.categories.umha": "Untitled MHA",
+      "key.untitled_mha.ability_three_use": "Ability Three",
+      "key.untitled_mha.ability_four_use": "Ability Four",
+      "key.untitled_mha.ability_one_use": "Ability One",
+      "key.untitled_mha.ability_five_use": "Ability Five",
+      "key.untitled_mha.ability_six_use": "Ability Six"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -200,7 +292,12 @@
       },
       {
         "name": "Keybinds",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "GUI",
